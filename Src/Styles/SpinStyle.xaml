@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Storyboard x:Key="SpinStyle1">
+        <DoubleAnimation Storyboard.TargetProperty="Percentage" 
+                         RepeatBehavior="Forever"
+                         Duration="0:0:1.6" From="0" To="100" />
+
+        <DoubleAnimation Storyboard.TargetProperty="RotateAngle" 
+                         RepeatBehavior="Forever"
+                         Duration="0:0:3.2" From="0" To="360" />
+    </Storyboard>
+
+    <Storyboard x:Key="SpinStyle2">
+        <DoubleAnimation Storyboard.TargetProperty="Percentage" 
+                         AutoReverse="True"
+                         RepeatBehavior="Forever"
+                         Duration="0:0:1.5" From="0" To="100" />
+
+        <DoubleAnimation Storyboard.TargetProperty="RotateAngle" 
+                         RepeatBehavior="Forever"
+                         Duration="0:0:1.2" From="0" To="360" />
+    </Storyboard>
+
+    <Storyboard x:Key="SpinStyle3">
+        <DoubleAnimation Storyboard.TargetProperty="Percentage"
+                         RepeatBehavior="Forever"
+                         Duration="0:0:1.6" From="0" To="100" />
+    </Storyboard>
+
+    <Storyboard x:Key="SpinStyle4"
+                RepeatBehavior="Forever">
+        <DoubleAnimation Storyboard.TargetProperty="Percentage" 
+                         AutoReverse="True"
+                         Duration="0:0:1.2" From="0" To="100"/>
+
+        <DoubleAnimation Storyboard.TargetProperty="RotateAngle" 
+                         BeginTime="0:0:1.2"
+                         Duration="0:0:1.2" From="0" To="360"/>
+    </Storyboard>
+</ResourceDictionary>
