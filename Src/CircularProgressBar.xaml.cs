@@ -84,7 +84,7 @@ namespace LoadingSpinner.Src
 
         // Using a DependencyProperty as the backing store for SegmentColor.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SegmentColorProperty =
-            DependencyProperty.Register("SegmentColor", typeof(Brush), typeof(CircularProgressBar), new PropertyMetadata(new SolidColorBrush(Colors.Red), new PropertyChangedCallback(OnColorChanged)));
+            DependencyProperty.Register("SegmentColor", typeof(Brush), typeof(CircularProgressBar), new PropertyMetadata(new SolidColorBrush(Colors.Blue), new PropertyChangedCallback(OnColorChanged)));
 
         // Using a DependencyProperty as the backing store for Radius.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty RadiusProperty =
@@ -106,7 +106,7 @@ namespace LoadingSpinner.Src
         private static void OnColorChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
         {
             CircularProgressBar circle = sender as CircularProgressBar;
-            circle.SetColor((SolidColorBrush)args.NewValue);
+            circle.SetColor((Brush)args.NewValue);
         }
 
         private static void OnThicknessChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
@@ -188,7 +188,7 @@ namespace LoadingSpinner.Src
             pathRoot.StrokeThickness = n;
         }
 
-        public void SetColor(SolidColorBrush n)
+        public void SetColor(Brush n)
         {
             pathRoot.Stroke = n;
         }

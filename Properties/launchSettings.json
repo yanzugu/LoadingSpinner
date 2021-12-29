@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "設定檔 1": {
-      "commandName": "Executable",
-      "executablePath": "C:\\Users\\ADMIN\\Desktop\\WpfApp3\\bin\\Debug\\net5.0-windows\\WpfApp3.exe"
-    }
-  }
-}
